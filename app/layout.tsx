@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { CartProvider } from "@/contexts/CartContext";
 import ConditionalNavbar from "@/components/ConditionalNavbar";
+import { Suspense } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,7 +32,9 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <CartProvider>
-          <ConditionalNavbar />
+          <Suspense fallback={null}>
+            <ConditionalNavbar />
+          </Suspense>
           {children}
         </CartProvider>
       </body>
