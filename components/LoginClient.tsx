@@ -29,52 +29,52 @@ export default function LoginClient() {
   }
 
   return (
-    <Card className="w-[450px] shadow-xl">
-      <CardHeader className="space-y-4 text-center pb-6">
+    <Card className="w-full max-w-[450px] mx-4 shadow-xl">
+      <CardHeader className="space-y-3 md:space-y-4 text-center pb-4 md:pb-6">
         <div className="flex justify-center">
-          <div className="bg-linear-to-br from-blue-500 to-purple-600 p-4 rounded-2xl shadow-lg">
-            <ShoppingCart className="h-10 w-10 text-white" />
+          <div className="bg-linear-to-br from-blue-500 to-purple-600 p-3 md:p-4 rounded-2xl shadow-lg">
+            <ShoppingCart className="h-8 w-8 md:h-10 md:w-10 text-white" />
           </div>
         </div>
 
-        <div className="space-y-3">
-          <CardTitle className="text-3xl font-bold">
+        <div className="space-y-2 md:space-y-3">
+          <CardTitle className="text-2xl md:text-3xl font-bold">
             Login Required
           </CardTitle>
-          <CardDescription className="text-base text-gray-600">
+          <CardDescription className="text-sm md:text-base text-gray-600 px-2">
             Please log in before proceeding
           </CardDescription>
         </div>
       </CardHeader>
 
-      <CardContent className="space-y-6 pb-6">
+      <CardContent className="space-y-4 md:space-y-6 pb-4 md:pb-6">
         {/* Why Login Section */}
-        <div className="bg-blue-50 rounded-lg p-4 space-y-3">
-          <p className="font-semibold text-gray-800 text-center">
+        <div className="bg-blue-50 rounded-lg p-3 md:p-4 space-y-2 md:space-y-3">
+          <p className="font-semibold text-gray-800 text-center text-sm md:text-base">
             Authentication is mandatory to:
           </p>
           <div className="space-y-2">
-            <div className="flex items-center gap-3">
-              <div className="bg-blue-500 rounded-full p-1.5">
-                <Lock className="h-4 w-4 text-white" />
+            <div className="flex items-center gap-2 md:gap-3">
+              <div className="bg-blue-500 rounded-full p-1.5 flex-shrink-0">
+                <Lock className="h-3.5 w-3.5 md:h-4 md:w-4 text-white" />
               </div>
-              <span className="text-sm text-gray-700">Complete checkout securely</span>
+              <span className="text-xs md:text-sm text-gray-700">Complete checkout securely</span>
             </div>
-            <div className="flex items-center gap-3">
-              <div className="bg-blue-500 rounded-full p-1.5">
-                <Package className="h-4 w-4 text-white" />
+            <div className="flex items-center gap-2 md:gap-3">
+              <div className="bg-blue-500 rounded-full p-1.5 flex-shrink-0">
+                <Package className="h-3.5 w-3.5 md:h-4 md:w-4 text-white" />
               </div>
-              <span className="text-sm text-gray-700">View and track your orders</span>
+              <span className="text-xs md:text-sm text-gray-700">View and track your orders</span>
             </div>
 
           </div>
         </div>
 
         <Button 
-          className="w-full h-12 text-base font-semibold bg-white hover:bg-gray-50 text-gray-900 border-2 border-gray-200 shadow-sm transition-all hover:shadow-md" 
+          className="w-full h-11 md:h-12 text-sm md:text-base font-semibold bg-white hover:bg-gray-50 text-gray-900 border-2 border-gray-200 shadow-sm transition-all hover:shadow-md" 
           onClick={loginWithGoogle}
         >
-          <svg className="mr-3 h-5 w-5" viewBox="0 0 24 24">
+          <svg className="mr-2 md:mr-3 h-4 w-4 md:h-5 md:w-5" viewBox="0 0 24 24">
             <path
               fill="currentColor"
               d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
@@ -110,7 +110,7 @@ export default function LoginClient() {
 
         <Button 
           variant="outline"
-          className="w-full h-12 text-base font-semibold" 
+          className="w-full h-11 md:h-12 text-sm md:text-base font-semibold" 
           onClick={continueAsGuest}
         >
           Continue Shopping as Guest
