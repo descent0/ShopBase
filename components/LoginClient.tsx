@@ -55,13 +55,13 @@ export default function LoginClient() {
           </p>
           <div className="space-y-2">
             <div className="flex items-center gap-2 md:gap-3">
-              <div className="bg-blue-500 rounded-full p-1.5 flex-shrink-0">
+              <div className="bg-blue-500 rounded-full p-1.5 shrink-0">
                 <Lock className="h-3.5 w-3.5 md:h-4 md:w-4 text-white" />
               </div>
               <span className="text-xs md:text-sm text-gray-700">Complete checkout securely</span>
             </div>
             <div className="flex items-center gap-2 md:gap-3">
-              <div className="bg-blue-500 rounded-full p-1.5 flex-shrink-0">
+              <div className="bg-blue-500 rounded-full p-1.5 shrink-0">
                 <Package className="h-3.5 w-3.5 md:h-4 md:w-4 text-white" />
               </div>
               <span className="text-xs md:text-sm text-gray-700">View and track your orders</span>
